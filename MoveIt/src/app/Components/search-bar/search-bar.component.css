@@ -1,35 +1,23 @@
-
-.pdl0{
-    padding-left: 0;
-}
-
 .brl0 {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.small-text{
-    font-size: small;
-    font-family: 'Roboto', sans-serif ;
-    font-weight: bold;
-}
-
-.text-muted{
+.text-muted {
     font-size: small;
 }
 
 .no-shadow {
     box-shadow: none;
-    padding: 0%;
-  }
+}
 
-  .pd-0{
-    padding: 0px !important;
-  }
+.pd-0 {
+    padding: 0px;
+}
 
-  
-  .input-hover:hover{
+.input-hover:hover {
     border: 1px;
     border-style: solid;
     border-color: rgb(224, 224, 224) !important;
-  }
+}
+
