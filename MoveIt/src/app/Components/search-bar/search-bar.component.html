@@ -1,46 +1,51 @@
 <div class="container">
-    <div class="row mt-5 border rounded ">
+    <form class="row mt-5 border rounded" [formGroup]="searchBar" (ngSubmit)="search()">
         <div class="col-lg-1 form-control-ref pd-0">
             <div class="p-2 m-1 rounded input-hover border border-white ">
-                <label class="small-text" for="from"> ORIGIN</label>
-                <input id="from" class="form-control text-muted no-shadow pd-0 border-0" placeholder="Egypt, Assiut" >
+                <label class="small-text" for="fromLocation"> ORIGIN</label>
+                <input type="text" id="fromLocation" class="form-control text-muted no-shadow pd-0 border-0" 
+                       formControlName="fromLocation" placeholder="From" >
             </div>
         </div>
-        <div class="col-lg-1 col-sm-6 brl0 d-flex align-items-center">
+        <div (click)="swapLocations()" class="col-lg-1 col-sm-6 brl0 d-flex align-items-center">
             <span class="text-center mx-auto">
                 <i class="fa-solid fa-arrow-right-arrow-left"></i> 
             </span>
         </div>
         <div class="col-lg-2 form-control-ref pd-0">
             <div class="p-2 m-1 rounded input-hover border border-white ">
-                <label class="small-text" for="from"> DESTINATION</label>
-                <input id="from" class="form-control text-muted no-shadow pd-0 border-0" placeholder="US, NEW YORK" >
+                <label class="small-text" for="toLocation"> DESTINATION</label>
+                <input type="text" id="toLocation" class="form-control text-muted no-shadow pd-0 border-0" 
+                       formControlName="toLocation" placeholder="To" >
             </div>
         </div>
         <div class="col-lg-2 col-sm-6 form-control-ref pd-0">
             <div class="p-2 m-1 rounded input-hover border border-white ">
-                <label class="small-text" for="from"> DATE</label>
-                <input id="from" class="form-control text-muted no-shadow pd-0 border-0" type="date" placeholder="Egypt, Assiut" >
+                <label class="small-text" for="fromDate"> DATE</label>
+                <input type="date" id="fromDate" class="form-control text-muted no-shadow pd-0 border-0" 
+                       formControlName="fromDate" placeholder="01/01/2025" >
             </div>
         </div>
         <div class="col-lg-2 col-sm-6 form-control-ref pd-0">
             <div class="p-2 m-1 rounded input-hover border border-white ">
-                <label class="small-text" for="from"> RETURN DATE</label>
-                <input id="from" class="form-control text-muted no-shadow pd-0 border-0" type="date"  placeholder="01/01/2025" >
+                <label class="small-text" for="toDate"> RETURN DATE</label>
+                <input type="date" id="toDate" class="form-control text-muted no-shadow pd-0 border-0" 
+                       formControlName="toDate" placeholder="01/01/2025" >
             </div>
         </div>
         <div class="col-lg-2 col-sm-6 form-control-ref pd-0">
             <div class="p-2 m-1 rounded input-hover border border-white ">
-                <label class="small-text" for="from"> PASSENGERS</label>
-                <input id="from" class="form-control text-muted no-shadow pd-0 border-0" placeholder="1" >
+                <label class="small-text" for="passengers"> PASSENGERS</label>
+                <input type="number" id="passengers" class="form-control text-muted no-shadow pd-0 border-0" 
+                       formControlName="passengers" placeholder="#Number" >
             </div>
         </div>
-        <div class="col-lg-2 col-sm-6 btn btn-primary brl0 d-flex align-items-center">
+        <button type="submit" class="col-lg-2 col-sm-6 btn btn-primary brl0 d-flex align-items-center">
             <span class="text-center mx-auto">
                 <i class="fa fa-search"></i>
-                <span class="ml-2"> Update</span>
+                <span class="ml-2"> SEARCH</span>
             </span>
-        </div>
+        </button>
                 
-    </div>
+    </form>
 </div>

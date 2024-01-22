@@ -21,3 +21,7 @@
     border-color: rgb(224, 224, 224) !important;
 }
 
+.fa-arrow-right-arrow-left:hover{
+    cursor: pointer;
+    color: rgb(7, 20, 255);
+}
