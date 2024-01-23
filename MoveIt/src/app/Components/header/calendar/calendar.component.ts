@@ -13,7 +13,7 @@ export class CalendarComponent implements OnInit {
 
   constructor() { }
   days: Date[] = [];
-  activeDate: Date | null = null;
+  activeDate!: Date;
 
   ngOnInit(): void {
     this.days = this.getWeekDates(new Date());
@@ -22,9 +22,15 @@ export class CalendarComponent implements OnInit {
 
   getWeekDates(startDate: Date): Date[] {
     const weekDates: Date[] = [];
-    for (let i = 0; i < 7; i++) {
+    const today = new Date();
+    console.log();
+    
+    for (let i = -2; weekDates.length < 7; i++) {
       const date = new Date(startDate);
       date.setDate(startDate.getDate() + i);
+      if(date.getTime() < today.getTime()) {
+        continue;
+      }
       weekDates.push(date);
     }
     return weekDates;
@@ -32,11 +38,12 @@ export class CalendarComponent implements OnInit {
 
 
   setActiveDate(day: any): void {
+    this.days = this.getWeekDates(day);
     this.activeDate = day;
   }
 
   isActiveDate(day: any): boolean {
-    return this.activeDate === day;
+    return this.activeDate.getTime() == day.getTime();
   }
 
 }
