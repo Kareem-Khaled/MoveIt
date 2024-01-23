@@ -1,0 +1,10 @@
+.imgcs{
+    /* object-fit: contain; */
+    max-width: 8rem;
+    /* display: block; */
+    /* margin-left: 4px; */
+}
+
+.card:hover {
+    border-color: blue;
+}
