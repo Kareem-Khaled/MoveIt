@@ -25,3 +25,13 @@
     cursor: pointer;
     color: rgb(7, 20, 255);
 }
+
+.small-text{
+    font-size: .7rem;
+    font-weight: lighter;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: .8rem;
+}

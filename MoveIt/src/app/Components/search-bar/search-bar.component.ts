@@ -15,14 +15,15 @@ export class SearchBarComponent implements OnInit {
   fromDate!: Date; // You can use a Date object if needed
   toDate!: Date;
   searchBar!: FormGroup;
-  
+  today = new Date();
+
   
   constructor(private formBuilder: FormBuilder){
     this.searchBar = this.formBuilder.group({
       fromLocation: ['Egypt, Assiut',[Validators.required]],
       toLocation: ['USA, New YORK',[Validators.required]],
-      fromDate: [new Date(),[Validators.required]],
-      toDate: [new Date(),[Validators.required]],
+      fromDate: [this.today.toISOString().split('T')[0], [Validators.required]],
+      toDate: [],
       passengers: [1,[Validators.required]],
     });
     

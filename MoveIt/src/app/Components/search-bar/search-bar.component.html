@@ -1,45 +1,52 @@
 <div class="container">
-    <form class="row mt-5 border rounded" [formGroup]="searchBar" (ngSubmit)="search()">
+    <form class="row mt-5 border rounded shadow" [formGroup]="searchBar" (ngSubmit)="search()">
+        
         <div class="col-lg-1 form-control-ref pd-0">
             <div class="p-2 m-1 rounded input-hover border border-white ">
-                <label class="small-text" for="fromLocation"> ORIGIN</label>
-                <input type="text" id="fromLocation" class="form-control text-muted no-shadow pd-0 border-0" 
+                <label class="small-text text-muted" for="fromLocation"> ORIGIN</label>
+                <input type="text" id="fromLocation" class="form-control no-shadow pd-0 border-0  bold" 
                        formControlName="fromLocation" placeholder="From" >
             </div>
         </div>
+
         <div (click)="swapLocations()" class="col-lg-1 col-sm-6 brl0 d-flex align-items-center">
             <span class="text-center mx-auto">
                 <i class="fa-solid fa-arrow-right-arrow-left"></i> 
             </span>
         </div>
+
         <div class="col-lg-2 form-control-ref pd-0">
             <div class="p-2 m-1 rounded input-hover border border-white ">
-                <label class="small-text" for="toLocation"> DESTINATION</label>
-                <input type="text" id="toLocation" class="form-control text-muted no-shadow pd-0 border-0" 
+                <label class="small-text text-muted" for="toLocation"> DESTINATION</label>
+                <input type="text" id="toLocation" class="form-control no-shadow pd-0 border-0 bold" 
                        formControlName="toLocation" placeholder="To" >
             </div>
         </div>
+
         <div class="col-lg-2 col-sm-6 form-control-ref pd-0">
             <div class="p-2 m-1 rounded input-hover border border-white ">
-                <label class="small-text" for="fromDate"> DATE</label>
-                <input type="date" id="fromDate" class="form-control text-muted no-shadow pd-0 border-0" 
+                <label class="small-text text-muted" for="fromDate"> DATE</label>
+                <input type="date" id="fromDate" class="form-control no-shadow pd-0 border-0  bold" 
                        formControlName="fromDate" placeholder="01/01/2025" >
             </div>
         </div>
+
         <div class="col-lg-2 col-sm-6 form-control-ref pd-0">
             <div class="p-2 m-1 rounded input-hover border border-white ">
-                <label class="small-text" for="toDate"> RETURN DATE</label>
-                <input type="date" id="toDate" class="form-control text-muted no-shadow pd-0 border-0" 
+                <label class="small-text text-muted" for="toDate"> RETURN DATE</label>
+                <input type="date" id="toDate" class="form-control no-shadow pd-0 border-0  bold" 
                        formControlName="toDate" placeholder="01/01/2025" >
             </div>
         </div>
+
         <div class="col-lg-2 col-sm-6 form-control-ref pd-0">
             <div class="p-2 m-1 rounded input-hover border border-white ">
-                <label class="small-text" for="passengers"> PASSENGERS</label>
-                <input type="number" id="passengers" class="form-control text-muted no-shadow pd-0 border-0" 
+                <label class="small-text text-muted" for="passengers"> PASSENGERS</label>
+                <input type="number" id="passengers" class="form-control no-shadow pd-0 border-0  bold" 
                        formControlName="passengers" placeholder="#Number" >
             </div>
         </div>
+
         <button type="submit" class="col-lg-2 col-sm-6 btn btn-primary brl0 d-flex align-items-center">
             <span class="text-center mx-auto">
                 <i class="fa fa-search"></i>
