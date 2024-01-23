@@ -1,0 +1,18 @@
+.p0{
+    padding: 0;
+    cursor: pointer;
+    border: 0.1px solid white;
+    color: gray;
+}
+
+.p0:hover{
+    padding: auto;
+    margin: auto;
+    border-color: rgb(224, 224, 224);
+    /* background-color: rgb(224, 224, 224); */
+}
+
+.active{
+    background-color: #87ceeb;
+    color: blue;
+}
