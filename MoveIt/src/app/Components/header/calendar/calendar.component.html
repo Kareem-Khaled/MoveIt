@@ -1,0 +1,13 @@
+<div class="container bg-white">
+    <div class="row mt-5">
+      <div class="col card p0" *ngFor="let day of days" 
+            (click)="setActiveDate(day)"
+            [class.active]="isActiveDate(day)">
+        <div class="card-body text-center" >
+          <strong class="h5">{{ day | date:'EEE' | uppercase }}</strong><br>
+          <strong class="h6">{{ day | date:'d' }}</strong><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  
