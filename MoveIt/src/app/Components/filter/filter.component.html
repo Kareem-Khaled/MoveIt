@@ -1,54 +1,41 @@
 <div class="container ">
-
     <div class="card p-2 shadow-sm">
-        <div class="fa-solid fa-sort-down mx-2 mb-2 text-muted " type="button" data-bs-toggle="collapse"
+        <div class="fa-solid fa-sort-down mx-2 mb-2 text-muted" type="button" data-bs-toggle="collapse"
             data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
-            <span class="text-muted small-text"> Travel Time </span>
+            <span class="text-muted small-text"> Travel Time</span>
         </div>
         <div class="row mx-2">
             <div class="multi-collapse" id="multiCollapseExample2">
-
                 <div class="row">
-                    <div class="col-7 d-sm-inline">
-                        <input type="checkbox" class="form-check-input" id="nighttime">
-                        <span class="fa fa-clock text-secondary mx-1"></span>
-                        <label class="custom-control-label text-muted" for="nighttime">Nighttime(5)</label>
-                    </div>
-                    <div class="col-5 d-sm-inline">
-                        <small class="text-muted"> Before 6am</small>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-7 d-sm-inline">
+                    <div class="col-7">
                         <input type="checkbox" class="form-check-input" id="early">
                         <span class="fa-solid fa-cloud-sun text-warning mx-1"></span>
-                        <label class="custom-control-label text-muted" for="early">Early(8)</label>
+                        <label class="text-muted" for="early"> Early (8)</label>
                     </div>
-                    <div class="col-5 d-sm-inline">
-                        <small class="text-muted">6am - 11am</small>
+                    <div class="col-5 d-md-none d-xl-inline">
+                        <small class="text-muted">01am - 10am</small>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-7 d-sm-inline">
+                    <div class="col-7">
                         <input type="checkbox" class="form-check-input" id="midday">
                         <span class="fa-solid fa-sun text-danger mx-1"></span>
-                        <label class="custom-control-label text-muted" text-muted for="midday">Midday(12)</label>
+                        <label class="text-muted mx-1" for="midday"> Midday (12)</label>
                     </div>
-                    <div class="col-5 d-sm-inline">
-                        <small class="text-muted">11am - 5pm</small>
+                    <div class="col-5 d-md-none d-xl-inline">
+                        <small class="text-muted"> 11am - 6pm</small>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-7 d-sm-inline">
+                    <div class="col-7">
                         <input type="checkbox" class="form-check-input" id="late">
-                        <span class="fa-solid fa-moon text-primary mx-1"></span>
-                        <label class="custom-control-label text-muted" for="late">Late(17)</label>
+                        <span class="fa-solid fa-cloud-moon text-primary mx-1"></span>
+                        <label class="text-muted" for="late"> Late (17)</label>
                     </div>
-                    <div class="col-5 d-sm-inline">
-                        <small class="text-muted"> After 5pm</small>
+                    <div class="col-5 d-md-none d-xl-inline">
+                        <small class="text-muted"> 7pm - 12am</small>
                     </div>
                 </div>
             </div>
@@ -61,32 +48,26 @@
             <span class="text-muted small-text"> Ticket Type </span>
         </div>
         <div class="row mx-2">
-            <div class="col">
-                <div class="multi-collapse" id="multiCollapseExample1">
-
-                    <div class="row">
-                        <div class="col-6 d-sm-inline">
-                            <input type="checkbox" class="form-check-input" id="etickets">
-                            <span class="fa-solid fa-qrcode text-warning mx-1"></span>
-                            <label class="custom-control-label text-muted" for="etickets">
-                                <i class="bi bi-star-fill"></i>E-Tickets (5)</label>
-                        </div>
+            <div class="multi-collapse" id="multiCollapseExample1">
+                <div class="row">
+                    <div class="col-12">
+                        <input type="checkbox" class="form-check-input" id="etickets">
+                        <span class="fa-solid fa-qrcode text-success mx-1"></span>
+                        <label class="text-muted" for="etickets">
+                            <i class="bi bi-star-fill"></i> E-Ticket Only (5)</label>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-6 d-sm-inline">
-                            <input type="checkbox" class="form-check-input" id="onlyDirect">
-                            <span class="fa-solid fa-bolt text-success mx-1 "></span>
-                            <label class="custom-control-label text-muted" for="onlyDirect"><i
-                                    class="bi bi-star-fill"></i>Only
-                                Direct (8)</label>
-                        </div>
+                <div class="row">
+                    <div class="col-12">
+                        <input type="checkbox" class="form-check-input" id="onlyDirect">
+                        <span class="fa-solid fa-bolt text-warning mx-1 "></span>
+                        <label class="text-muted" for="onlyDirect">
+                            <i class="bi bi-star-fill"></i>Direct Only (8)</label>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-
 
 </div>
