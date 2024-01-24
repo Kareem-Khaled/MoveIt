@@ -5,7 +5,7 @@
             [class.active]="isActiveDate(day)">
         <div class="card-body text-center" >
           <strong>{{ day | date:'EEE' | uppercase }}</strong><br>
-          <strong>{{ day | date:'d' }}</strong><br>
+          <strong>{{ day | date:'d / M' }}</strong><br>
         </div>
       </div>
     </div>
