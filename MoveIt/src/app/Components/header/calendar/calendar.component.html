@@ -4,8 +4,8 @@
             (click)="setActiveDate(day)"
             [class.active]="isActiveDate(day)">
         <div class="card-body text-center" >
-          <strong class="h5">{{ day | date:'EEE' | uppercase }}</strong><br>
-          <strong class="h6">{{ day | date:'d' }}</strong><br>
+          <strong>{{ day | date:'EEE' | uppercase }}</strong><br>
+          <strong>{{ day | date:'d / M' }}</strong><br>
         </div>
       </div>
     </div>

@@ -22,11 +22,13 @@ export class CalendarComponent implements OnInit {
 
   getWeekDates(startDate: Date): Date[] {
     const weekDates: Date[] = [];
-    const today = new Date();
+    let today = new Date();
+    today.setHours(0, 0, 0, 0);
     console.log();
     
     for (let i = -2; weekDates.length < 7; i++) {
-      const date = new Date(startDate);
+      let date = new Date(startDate);
+      date.setHours(0, 0, 0, 0);
       date.setDate(startDate.getDate() + i);
       if(date.getTime() < today.getTime()) {
         continue;
