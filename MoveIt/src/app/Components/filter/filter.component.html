@@ -1,70 +1,64 @@
 <div class="container ">
     <div class="card p-2 shadow-sm">
-        <div class="fa-solid fa-sort-down mx-2 mb-2 text-muted" type="button" data-bs-toggle="collapse"
-            data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
-            <span class="text-muted small-text"> Travel Time</span>
+        <div class="fa fa-sort-down mx-2 mb-2" role="button" data-bs-toggle="collapse"
+            data-bs-target="#multiCollapseExample1" aria-expanded="true" aria-controls="multiCollapseExample1">
+            <span class="text-secondary small-text"> Travel Time: </span>
         </div>
-        <div class="row mx-2">
-            <div class="multi-collapse" id="multiCollapseExample2">
-                <div class="row">
-                    <div class="col-7">
-                        <input type="checkbox" class="form-check-input" id="early">
-                        <span class="fa-solid fa-cloud-sun text-warning mx-1"></span>
-                        <label class="text-muted" for="early"> Early (8)</label>
-                    </div>
-                    <div class="col-5 d-md-none d-xl-inline">
-                        <small class="text-muted">01am - 10am</small>
-                    </div>
+        <div class="row mx-2 collapse show multi-collapse" id="multiCollapseExample1">
+            <div class="row">
+                <div class="col-7">
+                    <input type="checkbox" class="form-check-input">
+                    <i class="fa fa-cloud-sun text-warning mx-1"> </i>
+                    <span for="onlyDirect" class="text-secondary"> Early (8)</span>
                 </div>
-
-                <div class="row">
-                    <div class="col-7">
-                        <input type="checkbox" class="form-check-input" id="midday">
-                        <span class="fa-solid fa-sun text-danger mx-1"></span>
-                        <label class="text-muted mx-1" for="midday"> Midday (12)</label>
-                    </div>
-                    <div class="col-5 d-md-none d-xl-inline">
-                        <small class="text-muted"> 11am - 6pm</small>
-                    </div>
+                <div class="col-5 d-md-none d-xl-inline">
+                    <small class="text-secondary">01am - 10am</small>
                 </div>
-
-                <div class="row">
-                    <div class="col-7">
-                        <input type="checkbox" class="form-check-input" id="late">
-                        <span class="fa-solid fa-cloud-moon text-primary mx-1"></span>
-                        <label class="text-muted" for="late"> Late (17)</label>
-                    </div>
-                    <div class="col-5 d-md-none d-xl-inline">
-                        <small class="text-muted"> 7pm - 12am</small>
-                    </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-7">
+                    <input type="checkbox" class="form-check-input">
+                    <i class="fa fa-sun text-danger mx-1"> </i>
+                    <span for="onlyDirect" class="text-secondary"> Midday (12)</span>
+                </div>
+                <div class="col-5 d-md-none d-xl-inline">
+                    <small class="text-secondary"> 11am - 6pm</small>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-7">
+                    <input type="checkbox" class="form-check-input">
+                    <i class="fa fa-cloud-moon text-primary mx-1"> </i>
+                    <span for="onlyDirect" class="text-secondary"> Late (17)</span>
+                </div>
+                <div class="col-5 d-md-none d-xl-inline">
+                    <small class="text-secondary"> 7pm - 12am</small>
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
 
     <div class="card p-2 mt-4 mb-4 shadow-sm">
-        <div class="fa-solid fa-sort-down mx-2 mb-2 text-muted " type="button" data-bs-toggle="collapse"
-            data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
-            <span class="text-muted small-text"> Ticket Type </span>
+        <div class="fa fa-sort-down mx-2 mb-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#multiCollapseExample2" aria-expanded="true" aria-controls="multiCollapseExample2">
+            <span class="text-secondary small-text"> Ticket Type: </span>
         </div>
-        <div class="row mx-2">
-            <div class="multi-collapse" id="multiCollapseExample1">
-                <div class="row">
-                    <div class="col-12">
-                        <input type="checkbox" class="form-check-input" id="etickets">
-                        <span class="fa-solid fa-qrcode text-success mx-1"></span>
-                        <label class="text-muted" for="etickets">
-                            <i class="bi bi-star-fill"></i> E-Ticket Only (5)</label>
-                    </div>
+        <div class="row mx-2 show multi-collapse" id="multiCollapseExample2">
+            <div class="row">
+                <div class="col-12">
+                    <input type="checkbox" class="form-check-input">
+                    <i class="fa fa-qrcode text-success mx-1"> </i>
+                    <span for="onlyDirect" class="text-secondary"> E-ticket Only (5)</span>
                 </div>
+            </div>
 
-                <div class="row">
-                    <div class="col-12">
-                        <input type="checkbox" class="form-check-input" id="onlyDirect">
-                        <span class="fa-solid fa-bolt text-warning mx-1 "></span>
-                        <label class="text-muted" for="onlyDirect">
-                            <i class="bi bi-star-fill"></i>Direct Only (8)</label>
-                    </div>
+            <div class="row">
+                <div class="col-12">
+                    <input type="checkbox" class="form-check-input">
+                    <i class="fa fa-bolt text-warning mx-1"> </i>
+                    <span for="onlyDirect" class="text-secondary"> Direct Only (8)</span>
                 </div>
             </div>
         </div>
